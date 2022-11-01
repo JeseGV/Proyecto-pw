@@ -45,9 +45,20 @@ var cadena = "<div class='tar'><div class='card text-bg-dark'><img src='"+ob.ima
 "</small></p></div></div></div>"
 
 
-var rad = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Pedir a domicilio</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  Pedir para recoger en tienda</label></div>"
-var red2 = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Programar pedido</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  sin cubiertos</label></div>"
-document.getElementById("generar").innerHTML = cadena + rad + red2;
+var rad = "<div class='form-check'><input class='form-check-input' type='radio' name='respuesta' value=' Pedir a domicilio' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Pedir a domicilio</label></div><div class='form-check'><input class='form-check-input' type='radio' name='respuesta' value = 'Pedir para recoger en tienda' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  Pedir para recoger en tienda</label></div>"
+var red2 = "<div class='form-check'><input class='form-check-input' type='radio' name='respuesta' value = ' Programar pedido' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Programar pedido</label></div><div class='form-check'><input class='form-check-input' type='radio' name='respuesta' value = ' sin cubiertos' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  sin cubiertos</label></div>"
+var bt = "<button type='button' onclick='pagar()' class='btn btn-outline-success'>Pagar</button>"
+document.getElementById("generar").innerHTML = cadena + rad + red2 + bt;
 
 }
 
+function pagar() {
+    var resp ="";
+    var grupo = document.getElementsByName("respuesta");
+		for(var j=0; j<grupo.length; j++){
+			if(grupo[j].checked){
+				resp = grupo[j].value;
+			}
+		}
+        prompt(ob.producto, resp+ " Total es: "+ob.precio)
+}
