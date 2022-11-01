@@ -17,7 +17,6 @@ function pedido(p) {
             producto = "lasagna clasica";
             break;
  }
- var cadena = "<p>Compraste: "+producto+"</p>";
- document.getElementById("compra").innerHTML = cadena;
- open("compra.html")
+ //open("compra.html")
+ document.open("compra.html")
 }
