@@ -83,7 +83,7 @@
   </div>
 </section>
 
-<br><h2 id="RP">Recetas populares</h2>
+<br><h2 id="RP">Platos populares</h2>
 <section class="container-fluid mt-3 mb-3">
   <div class="row gy-3">
     <div class="col-xl-3 col-lg-4 col-sm-6">
@@ -95,7 +95,7 @@
         />
         <div class="card-body">
           <h5>Lasagna clásica</h5>
-          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ver receta</a>
+          <a tabindex="0" class="btn btn-lg btn-danger" onclick="pedido(1)" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Pedir 150$</a>
         </div>
       </div>
     </div>
@@ -108,7 +108,7 @@
         />
         <div class="card-body">
           <h5>Tiramisú</h5>
-          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ver receta</a>
+          <a tabindex="0" class="btn btn-lg btn-danger" onclick="pedido(2)" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Pedir 70$</a>
         </div>
       </div>
     </div>
@@ -121,19 +121,17 @@
         />
         <div class="card-body">
           <h5>Costra de queso con suadero</h5>
-          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ver receta</a>
+          <a tabindex="0" class="btn btn-lg btn-danger" onclick="pedido(3)" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Pedir 120$</a>
         </div>
       </div>
     </div>
 
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button class="btn btn-outline-warning" type="button">Ver más...</button>
-    </div>
+    
 </div>
 </section>
 
 
-<br><h2 id="RP">Recetas nuevas</h2>
+<br><h2 id="RP">Platos nuevos</h2>
 <section class="container-fluid mt-3 mb-3">
   <div class="row gy-3">
     <div class="col-xl-3 col-lg-4 col-sm-6">
@@ -145,7 +143,7 @@
             />
             <div class="card-body">
               <h5>Crostini de Salmon</h5>
-              <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ver receta</a>
+              <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Pedir 150$</a>
             </div>
       </div>
     </div>
@@ -158,7 +156,7 @@
         />
         <div class="card-body">
           <h5>Pay con relleno de zarzamora</h5>
-          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ver receta</a>
+          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Pedir 60$</a>
         </div>
       </div>
     </div>
@@ -171,7 +169,7 @@
         />
         <div class="card-body">
           <h5>Cacerola de pollo a la jardinera</h5>
-          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" href="compra.html" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ver receta</a>
+          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" href="compra.html" data-bs-content="And here's some amazing content. It's very engaging. Right?">Pedir 120$</a>
         </div>
       </div>
       
@@ -185,14 +183,11 @@
         />
         <div class="card-body">
           <h5>Salmorejo con jamón</h5>
-          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Ver receta</a>
+          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Pedir 100$</a>
         </div>
       </div>
     </div>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button class="btn btn-outline-warning" type="button">Ver más...</button>
-    </div>
-    
+   
 </div>
 </section>
 <footer class="footer bg-dark py-3">
@@ -203,6 +198,7 @@
   </div>
 </footer>
 
+<script src = "scr.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
