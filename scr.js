@@ -23,30 +23,18 @@ function pedido(p) {
  switch(p){
     case 1: ob = new producto(150,"lasagna clasica", "img/lasagna.jpg")
             break;
-    case 2: precio = 70;
-            producto = "Tiramisú"
-            imagen = "img/tiramisu.jpg"  
-            break;
-    case 3: precio = 120;
-            producto = "Costra de queso con suadero"
-            imagen = "img/suadero.jpg"  
-            break;      
-    case 4: precio = 150;
-            producto = "Crostini de Salmon"
-            imagen = "img/crostini.jpg"  
-            break;
-    case 5: precio = 60;
-            producto = "Pay con relleno de zarzamora"
-            imagen = "img/pay.jpg" 
-            break;
-    case 6: precio = 120;
-            producto = "Cacerola de pollo a la jardinera"
-            imagen = "img/cacerola.jpg"  
-            break;
-    case 7: precio = 100;
-            producto = "Salmorejo con jamón"
-            imagen = "img/salmorejo.jpg"  
-            break;
+    case 2: ob = new producto(70,"Tiramisú", "img/tiramisu.png")
+    break;
+    case 3: ob = new producto(120,"Costra de queso con suadero", "img/suadero.jpg")
+    break;     
+    case 4: ob = new producto(150,"Crostini de salmon", "img/crostini.jpg")
+    break;
+    case 5: ob = new producto(60,"Pay con relleno de zarzamora", "img/pay.jpg")
+    break;
+    case 6: ob = new producto(120,"Cacerola de pollo a la jardinera", "img/cacerola.jpg")
+    break;
+    case 7: ob = new producto(100,"Salmorejo con jamón", "img/salmorejo.jpg")
+    break;
 }
  document.getElementById("sip").style.display = "none";
  document.getElementById("generar").style.display= "block";
