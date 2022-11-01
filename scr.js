@@ -21,12 +21,14 @@ function pedido(p) {
  switch(p){
     case 1: precio = 150;
             producto = "lasagna clasica"
+            imagen = "img/lasagna.jpg"
             break;
  }
  document.getElementById("sip").style.display = "none";
- Document.getElementById("generar").style.display= "block";
+ document.getElementById("generar").style.display= "block";
  
 var cadena = "<p>precio: "+precio+" producto: "+producto+"</p>"
+document.getElementById("generar").innerHTML = cadena;
 
 }
 
