@@ -9,6 +9,9 @@ function ver() {
             window.open("inicio.html")
         }
     }
+    if(document.getElementById("floatingInput").value != "hola@tec2.mx" && document.getElementById("floatingPassword").value != "1234"){
+
+    }
 }
 
 function pedido(p) {
@@ -21,4 +24,7 @@ function pedido(p) {
  document.open("compra.html")
 }
 
-//prueba
+//Posiblemente no funcioned
+function act(){
+    
+}
