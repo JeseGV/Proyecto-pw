@@ -51,8 +51,15 @@ function pedido(p) {
  document.getElementById("sip").style.display = "none";
  document.getElementById("generar").style.display= "block";
  
-var cadena = "<div class='tar'><div class='card text-bg-dark'><img src='"+ob.imagen+"' class='card-img' alt='imagen de la compra'><div class='card-img-overlay'><h5 class='card-title'>"+ob.producto+"</h5><p class='card-text'>El platillo es tal y comom se muestra en la imagen e igual de bueno</p><p class='card-text'><small>EL precio es: "+ob.precio+"</small></p></div></div></div>"
-document.getElementById("generar").innerHTML = cadena;
+var cadena = "<div class='tar'><div class='card text-bg-dark'><img src='"+ob.imagen+
+"' class='card-img' alt='imagen de la compra'><div class='card-img-overlay'><h5 class='card-title'>"+ob.producto+
+"</h5><p class='card-text'>El platillo es tal y comom se muestra en la imagen e igual de bueno</p><p class='card-text'><small>EL precio es: "+ob.precio+
+"</small></p></div></div></div>"
+
+
+var rad = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Default radio</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  Default checked radio</label></div>"
+var red2 = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Default radio</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  Default checked radio</label></div>"
+document.getElementById("generar").innerHTML = cadena + rad;
 
 }
 
