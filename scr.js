@@ -20,3 +20,5 @@ function pedido(p) {
  //open("compra.html")
  document.open("compra.html")
 }
+
+//prueba
