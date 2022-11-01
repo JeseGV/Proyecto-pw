@@ -7,10 +7,11 @@ function ver() {
     if(document.getElementById("floatingInput").value == "hola@tec2.mx"){
         if(document.getElementById("floatingPassword").value == "1234"){
             window.open("inicio.html")
-        } else(document.getElementById("floatingInput").value != "hola@tec2.mx" && document.getElementById("floatingPassword").value != "1234"){
+        }
+        } else { (document.getElementById("floatingInput").value != "hola@tec2.mx" && document.getElementById("floatingPassword").value != "1234")
             alert("error, intente de nuevo");
         }
-    }
+    
     
 }
 
