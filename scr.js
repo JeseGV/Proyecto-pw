@@ -27,7 +27,7 @@ function pedido(p) {
  document.getElementById("sip").style.display = "none";
  document.getElementById("generar").style.display= "block";
  
-var cadena = "<p>precio: "+precio+" producto: "+producto+"</p>"
+var cadena = "<div class='tar'><div class='card text-bg-dark'><img src='"+imagen+"' class='card-img' alt='imagen de la compra'><div class='card-img-overlay'><h5 class='card-title'>"+producto+"</h5><p class='card-text'>El platillo es tal y comom se muestra en la imagen e igual de bueno</p><p class='card-text'><small>EL precio es: "+precio+"</small></p></div></div></div>"
 document.getElementById("generar").innerHTML = cadena;
 
 }
