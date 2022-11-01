@@ -45,9 +45,9 @@ var cadena = "<div class='tar'><div class='card text-bg-dark'><img src='"+ob.ima
 "</small></p></div></div></div>"
 
 
-var rad = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Default radio</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  Default checked radio</label></div>"
-var red2 = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Default radio</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  Default checked radio</label></div>"
-document.getElementById("generar").innerHTML = cadena + rad;
+var rad = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Pedir a domicilio</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  Pedir para recoger en tienda</label></div>"
+var red2 = "<div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault1'><label class='form-check-label' for='flexRadioDefault1'>  Programar pedido</label></div><div class='form-check'><input class='form-check-input' type='radio' name='flexRadioDefault' id='flexRadioDefault2' checked><label class='form-check-label' for='flexRadioDefault2'>  sin cubiertos</label></div>"
+document.getElementById("generar").innerHTML = cadena + rad + red2;
 
 }
 
