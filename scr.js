@@ -7,14 +7,14 @@ function ver() {
     if(document.getElementById("floatingInput").value == "hola@tec2.mx"){
         if(document.getElementById("floatingPassword").value == "1234"){
             window.open("inicio.html")
-        }
-        } else { (document.getElementById("floatingInput").value != "hola@tec2.mx" && document.getElementById("floatingPassword").value != "1234")
+        } else{
+            (document.getElementById("floatingPassword").value != "1234")
             alert("error, intente de nuevo");
         }
-    
-    
+    }else{ (document.getElementById("floatingInput").value != "hola@tec2.mx")
+        alert("error, intente de nuevo");
+        }
 }
-
 function pedido(p) {
  switch(p){
     case 1: precio = 150;
