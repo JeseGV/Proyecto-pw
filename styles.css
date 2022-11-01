@@ -1,4 +1,7 @@
-
+body{
+	background: url(img/Cocina.jpg);
+	background-size: 100%;
+}
 .sesion {
 margin: 5% 30%;
 }
