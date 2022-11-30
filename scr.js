@@ -60,5 +60,6 @@ function pagar() {
 				resp = grupo[j].value;
 			}
 		}
-        prompt(ob.producto, resp+ " Total es: "+ob.precio)
+        
+        prompt(ob.producto, resp+ " Total es: "+ob.precio);
 }
