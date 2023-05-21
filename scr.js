@@ -8,14 +8,14 @@ function producto(precio,producto,imagen){
 
 
 function ver() {
-    if(document.getElementById("floatingInput").value == "hola@tec2.mx"){
+    if(document.getElementById("floatingInput").value == "edgar"){
         if(document.getElementById("floatingPassword").value == "1234"){
             window.open("inicio.html")
         } else{
             (document.getElementById("floatingPassword").value != "1234")
             alert("error, intente de nuevo");
         }
-    }else{ (document.getElementById("floatingInput").value != "hola@tec2.mx")
+    }else{ (document.getElementById("floatingInput").value != "edgar")
         alert("error, intente de nuevo");
         }
 }
